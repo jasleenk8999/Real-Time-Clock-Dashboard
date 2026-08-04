@@ -1,16 +1,48 @@
-# React + Vite
+# Real-Time Clock Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A polished React-based world-clock dashboard that combines an analog clock, a digital clock, timezone management, alarms, and dynamic UI controls in a single responsive interface.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Live analog and digital time updates every second
+- Multi-region timezone cards with add/remove controls
+- Primary focus clock with a selectable timezone
+- Alarm scheduling with enable, snooze, and dismiss actions
+- Audible alarm alerts using the browser audio API
+- Dynamic UI controls for seconds display, light/dark mode, compact layout, and accent color
+- Persistent timezone preferences saved in browser storage
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19
+- Vite 8
+- CSS for responsive dashboard styling
+- Vitest for regression testing
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- src/App.jsx: main dashboard component, timezone logic, clock rendering, and alarm behavior
+- src/App.css: visual design, clock layout, and responsive styling
+- src/App.test.jsx: regression tests for the time formatting helper
+
+## Getting Started
+
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the local URL shown by Vite in the browser.
+
+## Available Scripts
+
+- npm run dev — start the local development server
+- npm run build — build the app for production
+- npm run test — run the regression test suite
+
+## Notes
+
+The app uses browser localStorage to preserve the selected primary timezone and the list of visible timezone cards between refreshes.
