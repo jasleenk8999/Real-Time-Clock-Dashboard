@@ -43,6 +43,10 @@ A polished React-based world-clock dashboard that combines an analog clock, a di
 - npm run build — build the app for production
 - npm run test — run the regression test suite
 
+## Screenshots
+
+<img width="1647" height="830" alt="image" src="https://github.com/user-attachments/assets/c18fbb2e-26be-44a0-939a-6b0592188710" />
+
 ## Notes
 
 The app uses browser localStorage to preserve the selected primary timezone and the list of visible timezone cards between refreshes.
