@@ -373,6 +373,9 @@ function App() {
           ))}
         </div>
       </section>
+      <footer className="site-footer">
+        © 2026 Jasleen Kaur | PRN: 12410014
+      </footer>
     </div>
   )
 }
